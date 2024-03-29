@@ -1,0 +1,137 @@
+/* هذا خاص بعرض الصوره تحت الناف بار */
+.home-services {
+  background-image: url("	https://demo.archiwp.com/wp-content/uploads/2015/07/subheader-6.jpg");
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* تنسيق الكلام الذي بداخل الصوره */
+.desc-services {
+  padding-top: 150px;
+  font-family: "Dosis,sans-serif";
+  color: rgb(236, 239, 243);
+  font-size: 32px;
+  text-align: center;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.res span {
+  color: goldenrod;
+}
+.res {
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+/* تظبيط عرض الخريطه علي الشاشه */
+.google-map {
+  width: 100%;
+  height: 100%;
+}
+.google-map iframe {
+  width: 100%;
+  height: 620px;
+}
+/* السيشكن الخاص بالفورم والذي بجانبه ارقام التواصل */
+.contact-me {
+  background: #18191b;
+  padding-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.contact-me form h2 {
+  font-size: 18px;
+  font-weight: 400;
+  color: rgb(236, 239, 243);
+  padding: 40px 20px 30px 40px;
+  font-family: "Raleway, sans-serif";
+  margin-left: 90px;
+}
+.contact-me form .all-input {
+  display: flex;
+  gap: 20px;
+}
+.contact-me form .inputs {
+  display: flex;
+  flex-direction: column;
+  width: 290px;
+  margin-left: 120px;
+}
+.contact-me form .inputs input {
+  margin-bottom: 40px;
+  padding: 7px 13px;
+  background-color: #18191b;
+  border: 1px solid #333;
+  outline: none;
+}
+.submit-form {
+  width: 170px;
+  padding: 5px 22px;
+  background-color: #18191b;
+  border: 1px solid #8c8a8a;
+  color: rgb(255, 255, 255);
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  transition: all 0.9s ease;
+}
+.submit-form:hover {
+  border: 1px solid goldenrod;
+}
+.contact-me form textarea {
+  background-color: #18191b;
+  border: 1px solid #333;
+  outline: none;
+  height: 190px;
+  width: 500px;
+}
+/* footer  جزء ال  */
+.footer-item {
+  margin-left: 40px;
+}
+.all-footer {
+  padding-top: 80px;
+}
+
+#footer {
+  background: #000;
+}
+.footer-item {
+  width: 300px;
+}
+/* تظبيط خانه عرض الفورم وخانه التواصل وجعلها مناسبه مع الشاشات */
+@media (max-width: 768px) {
+  .desc-services {
+    display: flex;
+    flex-direction: column;
+    font-size: 32px;
+  }
+  .title-services {
+    font-size: 40px;
+  }
+  .contact-me {
+    width: 100%;
+  }
+  .contact-me form .inputs {
+    display: flex;
+    flex-direction: column;
+    width: 290px;
+    margin-left: 70px;
+  }
+  .contact-me form .all-input {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  .contact-me form textarea {
+    height: 190px;
+    width: 300px;
+    margin-left: 60px;
+  }
+  .footer-item {
+    margin-top: 30px;
+    margin-left: 70px;
+  }
+}

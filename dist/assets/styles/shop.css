@@ -1,0 +1,323 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+body {
+  background-color: #18191b;
+}
+li {
+  list-style: none;
+}
+/*  shop شايل كل ما يخص ال  container-shop هذا ال */
+.container-shop {
+  width: 90%;
+  margin: 40px auto;
+  overflow-x: hidden;
+}
+/*شايل الصوره التي تعرض في جانب الشاشه والكلام اللي جنبها  وشايل السيرش بالتفاصيل اللي تحته shop هذا ال  */
+.shop {
+  display: flex;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+.shop img {
+  width: 400px;
+  height: 400px;
+  flex: 1;
+}
+
+.shop-description {
+  flex: 1;
+  margin-left: 120px;
+  width: 250px;
+}
+.shop-description h4 {
+  color: #fff;
+  letter-spacing: 2;
+  font-size: 30px;
+  font-weight: 500;
+  width: 400px;
+}
+
+.product-item {
+  width: 280px;
+  height: 120px;
+  display: flex;
+  margin-bottom: 30px;
+}
+.product-item img {
+  width: 100%;
+  height: 120px;
+}
+.shop-description .cust {
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.shop-description span {
+  padding: 6px;
+  color: goldenrod;
+}
+.shop-description p {
+  width: 300px;
+}
+.btn1 {
+  margin-top: 50px;
+  width: 50px;
+  height: 40px;
+  border: 1px solid #fff;
+  outline: none;
+  text-align: center;
+}
+
+.btn2 {
+  margin-top: 50px;
+  width: 150px;
+  height: 40px;
+  background-color: #daa520;
+  border: 1px solid #daa520;
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.p2 {
+  margin-top: 30px;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+.p2 span {
+  color: #888;
+}
+/* <!-- تصيم  خانه البحث وعرض المنتجات الصغيره اللي تحتها   --> */
+.right-from-shop {
+  flex: 1;
+  width: 300px;
+}
+.right-from-shop input {
+  width: 200px;
+  height: 42px;
+  margin-left: 40px;
+  background-color: #000;
+  color: #888;
+  border: 1px solid #000;
+  padding-left: 13px;
+  outline: none;
+}
+
+.right-from-shop button {
+  width: 100px;
+  height: 37px;
+
+  border: 1px solid #daa520;
+  background-color: #daa520;
+  margin-left: 230px;
+  transform: translateY(-40px);
+}
+
+.right-from-shop .line {
+  width: 300px;
+  height: 1px;
+  background-color: #88888887;
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+.prodects h3 {
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.prodects .line2 {
+  width: 60px;
+  height: 2px;
+  background-color: #daa520;
+  margin-bottom: 20px;
+}
+
+.shop-description-big img {
+  max-width: 100px;
+  height: 80px;
+}
+.shop-description-big {
+  display: flex;
+  margin-top: 20px;
+}
+.cont {
+  margin-left: 17px;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+.shop-description-big .glod {
+  color: #daa520;
+}
+
+/*  هذا الجزء خاص ب مربع الوصف  الذي موجود بداخله وصف  */
+
+.about-shop-desc {
+  position: relative;
+}
+.des {
+  width: 750px;
+  height: 200px;
+  margin-top: 50px;
+  border: 1px solid #fff;
+  transform: translate(-900px, -600px);
+  position: absolute;
+}
+
+.des h2 {
+  padding: 12px;
+}
+.des p {
+  padding: 10px;
+}
+.shop-description3 {
+  position: relative;
+  display: flex;
+  transform: translate(-690px, -300px);
+  color: #fff;
+}
+
+/*  هذا الجزء خاص بوضع استايل  الصور التي اسفل الجزء العلوي والذي تم شرحه فوق  ويتم فيه عرض 3 صور مع بيانات لهما 
+ */
+.bottom-category {
+  margin-top: 100px;
+  margin-right: 400px;
+  display: flex;
+}
+.bottom-category-item {
+  margin-left: 40px;
+}
+.bottom-category-item img {
+  width: 220px;
+  height: 220px;
+  border: 3px solid #000;
+}
+.detail {
+  margin-left: 10px;
+}
+.bottom-category-item p {
+  margin-top: 7px;
+  font-family: "Dosis", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.bottom-category-item .price {
+  color: #daa520;
+  font-family: sans-serif;
+}
+.bottom-category-item .add-to-card {
+  border: 1px solid #616161;
+  background-color: transparent;
+  font-size: 12px;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  padding: 5px 15px;
+  width: 180px;
+  transition: all 0.9s ease;
+}
+.bottom-category-item .add-to-card span {
+  color: #daa520;
+  font-size: 13px;
+  padding-left: 5px;
+}
+.bottom-category-item .add-to-card:hover {
+  background-color: #daa520;
+  color: #18191b;
+}
+.bottom-category-item-right {
+  margin-left: 170px;
+  color: rgb(236, 239, 243);
+}
+.bottom-category-item-right h3 {
+  width: 300px;
+  letter-spacing: 2px;
+  font-size: 16px;
+  font-family: "Dosis", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.box-small {
+  width: 220px;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  height: 30px;
+  margin-bottom: 10px;
+  background-color: #000;
+  font-size: 13px;
+  padding-top: 3px;
+  padding-left: 7px;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+#footer-shop {
+  background-color: #000;
+}
+/*  تظبيط الريسبونسف علي التليفون */
+@media (max-width: 768px) {
+  .desc-services {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .shop {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .shop-description h4 {
+    color: #fff;
+    letter-spacing: 2;
+    font-size: 20px;
+    margin-left: -20px;
+    font-weight: 500;
+    width: 100%;
+  }
+  .shop img {
+    width: 80%;
+    margin: auto;
+  }
+  .shop-description {
+    flex: 1;
+    margin-top: 40px;
+    margin-left: 22px;
+    width: 250px;
+  }
+  .right-from-shop input {
+    width: 200px;
+    height: 37px;
+    margin-left: 60px;
+    margin-top: 20px;
+    padding-left: 13px;
+  }
+  .right-from-shop button {
+    margin-top: 4px;
+    height: 34px;
+    width: 90px;
+  }
+  .des {
+    position: absolute;
+    left: 170%;
+    width: 400px;
+    height: 200px;
+    margin-top: 338px;
+    border: 1px solid rgb(255, 255, 255);
+    transform: translate(-730px, -350px);
+  }
+  .bottom-category {
+    margin-top: 246px;
+    margin-right: 400px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .bottom-category-item .add-to-card {
+    margin-bottom: 30px;
+  }
+  .bottom-category-item-right {
+    margin-left: 40px;
+  }
+}

@@ -1,0 +1,21 @@
+/* simple project تصميم طريقه عرض ال  */
+
+.apply-image {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  overflow-x: hidden;
+  gap: 30px;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.image-container {
+  width: 400px;
+  height: 220px;
+  object-fit: cover;
+  position: relative;
+  overflow: hidden;
+}

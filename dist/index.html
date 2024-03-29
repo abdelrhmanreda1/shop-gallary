@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--  هذه اللينكات  لتتغير شكل الخط -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!--   هذه اللينكات خاصه بالتوستراب -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!--  css هذا ملف ربط ال  -->
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <title>Home Page</title>
+  </head>
+  <body>
+    <!-- خاص بالناف بار وهوه  ثابت ماعدا الاكتيف لما ادوس علي الصفحه متغير علي حسب انا دوست علي ايه  -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light d-flex d-flex justify-content-center"
+    >
+      <div class="container-fluid w-75">
+        <img
+          class="logo-static"
+          src="https://demo.archiwp.com/wp-content/themes/archi/images/logo.png"
+          alt="Archi"
+        />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./projects.html">projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./services.html">services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages.html">pages</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="./shop.html">shop</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--    لتحريك الصور  swiper هذا خاص بجزء ال   -->
+    <section>
+      <div
+        id="carouselExampleControls"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="assets/images/HomeImg/bg-3.jpeg"
+              class="d-block w-100"
+              alt="image"
+            />
+            <!--   لجعل الكلام يظهر بتاثير   animate  تم اضافه هنا مكتبه خاصه بال  -->
+            <div class="details animate__animated animate__zoomIn">
+              <h5>featured projects</h5>
+              <h2>green interior</h2>
+              <button>our portfolio</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/images/HomeImg/subheader-1.jpeg"
+              class="d-block w-100"
+              alt="image"
+            />
+            <div class="details animate__animated animate__zoomIn">
+              <h5>interiror remodeling to makes</h5>
+              <h2>your life easier</h2>
+              <button>our portfolio</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/images/HomeImg/wide3.jpeg"
+              class="d-block w-100"
+              alt="image"
+            />
+            <div class="details animate__animated animate__zoomIn">
+              <h5>interior remodeling to makes</h5>
+              <h2>your life easier</h2>
+              <button>our portfolio</button>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!--  what we do   هذا سيشكن  -->
+    <section id="what_we_do">
+      <h2 class="title">what we do</h2>
+      <span class="underline"></span>
+      <div class="container d-flex justify-content-evenly all-card">
+        <div class="card bg-none card-item">
+          <div class="card-body">
+            <h3 class="title-card">
+              <span class="card-desc">RESIDENTIAL</span> DESIGN
+            </h3>
+            <p class="card-text">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+              quae ab illo inventore veritatis et quasi architecto beatae vitae
+              dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+              aspernatur aut odit aut fugit, sed quia
+            </p>
+          </div>
+          <img
+            src="assets/images/HomeImg/pic_1.jpeg"
+            class="card-img-top"
+            alt="image"
+          />
+        </div>
+
+        <div class="card card-item">
+          <div class="card-body">
+            <h3 class="title-card">
+              <span class="card-desc">OFFICE</span> DESIGN
+            </h3>
+            <p class="card-text">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+              quae ab illo inventore veritatis et quasi architecto beatae vitae
+              dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+              aspernatur aut odit aut fugit, sed quia
+            </p>
+          </div>
+          <img
+            src="assets/images/HomeImg/pic_2.jpeg"
+            class="card-img-top"
+            alt="image"
+          />
+        </div>
+
+        <div class="card card-item">
+          <div class="card-body">
+            <h3 class="title-card">
+              <span class="card-desc">HOSPITALLY</span> DESIGN
+            </h3>
+            <p class="card-text">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+              quae ab illo inventore veritatis et quasi architecto beatae vitae
+              dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+              aspernatur aut odit aut fugit, sed quia
+            </p>
+          </div>
+          <img
+            src="assets/images/HomeImg/pic_3.jpeg"
+            class="card-img-top"
+            alt="image"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- process  هذا سيكشن  ال  -->
+    <section class="our-process">
+      <h2 class="title" style="padding-top: 80px">our process</h2>
+      <span class="underline"></span>
+      <div class="all-circle">
+        <div class="circle">MEEt & AGREE</div>
+        <div class="circle">IDEA & CONCEPT</div>
+        <div class="circle">DESIGN & CREATE</div>
+        <div class="circle">BUILD & INSTALL</div>
+      </div>
+
+      <p class="details-process">
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
+        illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+        explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+        odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+        voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum
+        quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam
+        eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
+        voluptatem. Ut enim ad minima veniam.
+      </p>
+    </section>
+    <!-- هذا السيشكن بيعرض كل الصور الخاصه بالبروجكتات -->
+    <section class="all-projects">
+      <h2 class="title">all projects</h2>
+      <span class="underline"></span>
+      <div class="all-image">
+        <div class="image-container">
+          <img
+            src="assets/images/projects/pf-1.jpeg"
+            alt="image"
+            class="image-item"
+          />
+          <span class="hover-image"> eco green interior</span>
+        </div>
+        <div class="image-container">
+          <img
+            src="assets/images/projects/pf-2.jpeg"
+            alt="image"
+            class="image-item"
+          />
+          <span class="hover-image"> modern elegance suite</span>
+        </div>
+        <div class="image-container">
+          <img
+            src="assets/images/projects/pf-3.jpeg"
+            alt="image"
+            class="image-item"
+          />
+          <span class="hover-image"> apartment renovation </span>
+        </div>
+        <div class="image-container">
+          <img
+            src="assets/images/projects/pf-4.jpeg"
+            alt="image"
+            class="image-item"
+          />
+          <span class="hover-image"> youtube video</span>
+        </div>
+        <div class="image-container">
+          <img
+            src="assets/images/projects/pf-5.jpeg"
+            alt="image"
+            class="image-item"
+          />
+          <span class="hover-image">viemo video</span>
+        </div>
+        <div class="image-container">
+          <img
+            src="assets/images/projects/pf-6 (1).jpeg"
+            alt="image"
+            class="image-item"
+          />
+          <span class="hover-image">restaurant in taxes</span>
+        </div>
+        <div class="image-container">
+          <img
+            src="assets/images/projects/pf-71.jpeg"
+            alt="image"
+            class="image-item"
+          />
+          <span class="hover-image">summer house</span>
+        </div>
+        <div class="image-container">
+          <img
+            src="assets/images/projects/pf-8 (1).jpeg"
+            alt="image"
+            class="image-item"
+          />
+          <span class="hover-image">office in space</span>
+        </div>
+
+        <div class="image-container">
+          <img
+            src="https://demo.archiwp.com/wp-content/uploads/2015/07/pf-9.jpg
+          "
+            alt="image"
+            class="image-item"
+          />
+          <span class="hover-image">luxury living room</span>
+        </div>
+
+        <div class="image-container">
+          <img
+            src="https://demo.archiwp.com/wp-content/uploads/2015/07/pf-10.jpg
+          "
+            alt="image"
+            class="image-item"
+          />
+          <span class="hover-image">cozy bedroom</span>
+        </div>
+
+        <div class="image-container">
+          <img
+            src="https://demo.archiwp.com/wp-content/uploads/2015/07/pf-11.jpg
+          "
+            alt="image"
+            class="image-item"
+          />
+          <span class="hover-image">classic furnishing</span>
+        </div>
+
+        <div class="image-container">
+          <img
+            src="https://demo.archiwp.com/wp-content/uploads/2015/07/pf-12.jpg
+          "
+            alt="image"
+            class="image-item"
+          />
+          <span class="hover-image">restaurant in cannes</span>
+        </div>
+      </div>
+    </section>
+    <!--    هذا السيكشن خاص بسيكشن الاساله وهو عباره عن زرار  -->
+    <section class="question">
+      <button class="get-question">
+        Get Question <span class="arrow"> ></span>
+      </button>
+    </section>
+    <!--    وهو ثابت في جميع الصفح footer هذا الجزء خاص بال   -->
+    <footer id="footer">
+      <div class="all-footer">
+        <div class="footer-item">
+          <img
+            class="logo-static title-footer"
+            src="https://demo.archiwp.com/wp-content/themes/archi/images/logo.png"
+            alt="Archi"
+          />
+          <p class="desc-logo">
+            We are team based on Brookylin. Our expertise on Interior Design.
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+            quae ab illo inventore veritatis et quasi architecto beatae vitae
+            dicta sunt explicabo.
+          </p>
+        </div>
+        <div class="footer-item">
+          <h3 class="title-footer">LATEST NEWS</h3>
+          <div class="desc-other">
+            <p>The 5 Secrets to Pulling Off Simple, Minimal Design</p>
+            <hr />
+            <p>9 Unique and Unusual Ways to Display Your TV</p>
+            <hr />
+            <p>5 Things That Take a Room from Good to Great</p>
+            <hr />
+            <p>Our Favorite Home Decor Trends of the Year</p>
+            <hr />
+            <p>How to Make a Huge Impact With Multiples</p>
+          </div>
+        </div>
+        <div class="footer-item">
+          <h3 class="title-footer">contact us</h3>
+          <div class="desc-other">
+            <p>100 Mainstreet Center, Sydney</p>
+            <hr />
+            <p><span class="contact">phone :</span> (208) 333 9296</p>
+            <hr />
+            <p><span class="contact">fax :</span> (208) 333 9298</p>
+            <hr />
+            <p><span class="contact">email :</span>support@oceanthemes.net</p>
+            <hr />
+            <p><span class="contact">web :</span>http://oceanthemes.net/</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

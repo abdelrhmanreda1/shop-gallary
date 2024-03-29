@@ -1,0 +1,425 @@
+/* هنا الخواص المحدده للناف بار  */
+.navbar {
+  background: #18191b !important;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  height: 70px;
+}
+
+.nav-item {
+  position: relative;
+  margin-left: 10px;
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.nav-link {
+  color: #fff !important;
+  font-family: "Raleway, sans-serif";
+  letter-spacing: 2px;
+}
+.active {
+  color: rgb(250, 183, 2) !important;
+}
+.nav-item:not(:last-child)::after {
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 5px;
+  font-size: 11px;
+  font-weight: 400;
+  background-color: gold;
+  border-radius: 50%;
+  right: -5px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#mainmenu {
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  float: right;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*  هذا السيشكن خاص بجزء تحريك الصور  */
+.carousel-item {
+  height: 100%;
+}
+
+.carousel-inner {
+  height: 100%;
+}
+
+.carousel img {
+  object-fit: cover;
+  height: 100vh;
+  width: 100%;
+}
+.carousel-item {
+  position: relative;
+}
+
+.details {
+  position: absolute;
+  font-family: "Dosis,sans-serif";
+  left: 10px;
+  top: 290px;
+
+  padding-left: 180px;
+}
+.details h5 {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: uppercase;
+  line-height: 18px;
+  letter-spacing: 8px;
+}
+.details h2 {
+  font-size: 72px;
+  font-weight: 300;
+  margin: 20px 0px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+
+
+.details button {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  background-color: transparent;
+  border: 2px solid white;
+  color: #fff;
+  padding: 5px 40px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+/*  هذا الريسبونسف خاص بال الكلام اللي جوه تحريك الصور*/
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  .details {
+    padding-right: 150px;
+    overflow-x: hidden;
+  }
+  .details h5 {
+    font-size: 10px;
+    letter-spacing: 2px;
+    width: 220px;
+    margin: 10px -94px;
+  }
+  .details h2 {
+    font-size: 13px;
+    margin: 23px -70px;
+  }
+  .details button {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    background-color: transparent;
+    border: 2px solid white;
+    color: #fff;
+    padding: 6px 10px !important;
+    font-size: 13px;
+    width: 120px;
+  }
+  .card-text {
+    margin-bottom: 20px !important;
+  }
+}
+/* what we do   هذا السيشكن خاص بجزء  */
+.underline {
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: gold;
+  margin: auto;
+  position: relative;
+}
+.underline::before {
+  position: absolute;
+  content: "";
+  width: 200px;
+  height: 2px;
+  background-color: #333;
+  top: 2px;
+  left: 9px;
+}
+#what_we_do {
+  background: #18191b;
+  height: auto;
+  overflow: hidden;
+}
+.title {
+  padding-top: 40px;
+  text-transform: uppercase;
+  font-family: "Dosis,sans-serif";
+  color: rgb(236, 239, 243);
+  font-size: 32px;
+  text-align: center;
+  font-weight: 300;
+}
+.underline::after {
+  position: absolute;
+  content: "";
+  width: 200px;
+  height: 2px;
+  background-color: #333;
+  top: 2px;
+  right: 9px;
+}
+
+.all-card {
+  margin-bottom: 20px;
+  flex-wrap: wrap !important;
+  width: 80%;
+}
+.card-item {
+  border: none !important;
+  margin-top: 30px;
+  width: 370px;
+}
+.card-body {
+  background-color: #18191b;
+}
+.title-card {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Dosis,sans-serif";
+  letter-spacing: 2px;
+  color: #fff;
+}
+.card-desc {
+  color: rgb(250, 183, 2);
+}
+.card-text {
+  font-family: sans-serif;
+  height: 120px;
+  line-height: 22px;
+  font-size: 13px;
+  color: rgb(221, 221, 221);
+  font-weight: 400;
+}
+.card-img-top {
+  border: none;
+}
+
+/* process  هذا السيكشن خاص بال   */
+.our-process {
+  width: 100%;
+  background-image: url("../images/HomeImg/bg-2.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+.all-circle {
+  margin-top: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding-bottom: 70px;
+  position: relative;
+}
+.all-circle::after {
+  position: absolute;
+  content: "";
+  width: 80%;
+  margin: 0 auto;
+  height: 1px;
+  background-color: rgb(221, 221, 221);
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 5px;
+}
+.circle {
+  width: 180px;
+  height: 180px;
+  background-color: rgb(161, 138, 8);
+  border-radius: 50%;
+  display: flex;
+  margin-left: 40px;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  transition: all 0.9s ease;
+  position: relative;
+}
+.circle:first-child::after {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: rgb(221, 221, 221);
+  transform: rotate(90deg);
+  bottom: -32px;
+}
+.circle:hover {
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  border: 2px solid #fff;
+}
+.details-process {
+  padding: 30px 0px;
+  color: rgb(221, 221, 221);
+  font-size: 15px;
+  line-height: 23px;
+  font-weight: 400;
+  display: block;
+  width: 80%;
+  margin: auto;
+}
+
+/*هذا السيكشن خاص بعرض جميع الصور الخاصه بسيكشن البروجكتات */
+.all-projects {
+  background-color: #18191b;
+  width: 100%;
+  height: 100%;
+}
+.title-projects {
+  text-align: center;
+  background-color: gold;
+}
+section .all-image {
+  margin-top: 30px;
+  display: flex;
+  width: 99.9%;
+  overflow-x: hidden;
+  gap: 0;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.image-container {
+  width: 360px;
+  height: 220px;
+  object-fit: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+.image-item {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transition: all 0.7s ease;
+}
+.image-container:hover .image-item,
+.hover-image {
+  transform: scale(1.1);
+}
+.hover-image {
+  position: absolute;
+  background-color: rgb(15, 15, 15);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  color: rgb(250, 183, 2);
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  align-items: center;
+  transition: all 0.7s ease;
+}
+.hover-image:hover {
+  opacity: 0.8;
+  height: 100%;
+  padding-top: 12px;
+  cursor: pointer;
+}
+
+/*  هذا سيكشن الاساله تم تعديل الزرار والباك جرازند */
+.question {
+  width: 100%;
+  height: 120px;
+  background-color: gold;
+}
+.question {
+  padding-top: 50px;
+}
+.get-question {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 7px 35px;
+  border: 1px solid #000;
+  text-transform: uppercase;
+  transition: all 0.7s ease;
+}
+.arrow {
+  padding-left: 6px;
+}
+.get-question:hover {
+  padding: 7px 40px;
+}
+/*   وهو ثابت في جميع الصفح   footer   هذا السيشكن خاص بتصميم ال  */
+#footer {
+  background-color: #18191b;
+  width: 100%;
+  height: 100%;
+}
+.all-footer {
+  width: 70%;
+  height: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  flex-wrap: wrap;
+}
+
+.footer-item {
+  width: 320px;
+  height: 30%;
+}
+.title-footer {
+  padding-bottom: 20px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Dosis,sans-serif";
+}
+.desc-logo {
+  color: rgb(214, 210, 210);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 2px;
+}
+.desc-other {
+  color: rgb(214, 210, 210);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 2px;
+}
+.contact {
+  color: gold;
+}

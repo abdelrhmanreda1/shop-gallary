@@ -1,0 +1,120 @@
+/* هذه الاستايلات خاصه بطريقه عرض ال  3   كروت  وظهورها بالشكل المطلوب*/
+
+.vc_column_container {
+  padding-left: 0;
+  padding-right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #18191b;
+  padding-top: 40px;
+}
+.vc_column_container > .vc_column-inner {
+  box-sizing: border-box;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 420px;
+  margin: 0px 40px;
+}
+.mb30 {
+  margin-bottom: 30px;
+}
+.pricing-s1 .top {
+  background: #222427;
+  color: #eee;
+  padding: 40px;
+  color: #ecf0f1;
+  text-align: center;
+}
+.pricing-s1 .top > * {
+  margin-top: 20px;
+  font-size: 32px;
+}
+.pricing-s1 .top .price .currency {
+  font-size: 24px;
+  line-height: 54px;
+  vertical-align: top;
+  display: inline-block;
+  color: #fab702;
+}
+.pricing-s1 .top .price .month {
+  color: #ccc;
+}
+.pricing-s1 .bottom {
+  border-top: 0px;
+  padding-bottom: 5px;
+  background: #222427;
+  text-align: center;
+}
+.pricing-s1 .bottom ul {
+  list-style: none;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  text-align: left;
+}
+s1 .bottom i,
+.expand h4:after,
+ul.sidebar-style-2 li:hover a,
+ul.sidebar-style-2 li.active a {
+  color: #fab702;
+}
+
+.pricing-s1 .bottom i {
+  margin-right: 10px;
+  float: none;
+}
+.pricing-s1 .bottom ul li:nth-child(odd) {
+  background: #2f3135;
+}
+.pricing-s1 .bottom ul li {
+  line-height: 60px;
+  padding: 0px 30px;
+  color: #ecf0f1;
+}
+.pricing-s1 .bottom ul li svg {
+  background-color: #fab702;
+  align-items: center;
+}
+a.btn-custom {
+  font-size: 13px;
+  color: #222;
+  letter-spacing: 3px;
+  line-height: normal;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 30px 0px;
+  padding: 7px 25px 7px 25px;
+  background-color: #fab702;
+  display: inline-block;
+}
+.pricing-s1 {
+  overflow: hidden;
+  position: relative;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  transition: box-shadow 1s;
+  -webkit-transition: box-shadow 1s;
+  -moz-transition: box-shadow 1s;
+}
+.pricing-s1 .ribbon {
+  width: 200px;
+  position: absolute;
+  top: 20px;
+  left: -55px;
+  text-align: center;
+  line-height: 50px;
+  letter-spacing: 1px;
+  color: #222;
+  font-weight: bold;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  background-color: #fab702;
+}
+/* تغيير خلفيه ال footer */
+#footer {
+  background-color: #000;
+}
